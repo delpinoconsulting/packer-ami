@@ -18,7 +18,7 @@ In the Provisioners section, feel free to add, remove and customize according to
 * Wget
 * EPEL Repo
 * Nginx
-* AWS Code Deploy Agent for US East-1 *(simpy change to your own AZ)
+* AWS Code Deploy Agent for US East-1 *(simply change to your own AZ)
 
 NOTE: Packer must be installed in your test system as well as have AWS access properly configured.
 
