@@ -1,4 +1,3 @@
-
 {
     "variables": {
         "aws_access_key": "",
@@ -13,15 +12,14 @@
     "source_ami_filter": {
       "filters": {
       "virtualization-type": "hvm",
-      "name": "CentOS Linux 7*",
+      "name": "Ubuntu Server 18*",
       "root-device-type": "ebs"
       },
-      "owners": ["aws-marketplace"],
       "most_recent": true
     },
     "instance_type": "t2.small",
     "ssh_username": "centos",
-    "ami_name": "Base-CentOS {{timestamp}}",
+    "ami_name": "Base-Ubuntu {{timestamp}}",
     "tags": {
       "Name": "Base-CentOS"
   }
@@ -31,16 +29,16 @@
     "type": "shell",
     "inline": [
       "sleep 30",
-      "sudo yum -y update",
-      "sudo yum install -y ruby",
-      "sudo yum install -y curl gnupg2",
-      "sudo yum install -y libcurl libcurl-devel",
-      "sudo yum install -y libxml2-devel",
-      "sudo yum install -y postgresql-devel",
-      "sudo yum install -y wget",
-      "sudo yum install -y epel-release",
-      "sudo yum install -y nginx",
-      "cd /home/centos",
+      "sudo apt-get -y update",
+      "sudo apt-get install -y ruby",
+      "sudo apt-get install -y curl gnupg2",
+      "sudo apt-get install -y libcurl libcurl-devel",
+      "sudo apt-get install -y libxml2-devel",
+      "sudo apt-get install -y postgresql-devel",
+      "sudo apt-get install -y wget",
+      "sudo apt-get install -y epel-release",
+      "sudo apt-get install -y nginx",
+      "cd /home/ubuntu",
       "wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install",
       "chmod +x ./install",
       "sudo ./install auto",
