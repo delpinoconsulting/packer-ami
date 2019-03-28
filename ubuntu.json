@@ -33,6 +33,7 @@
     "inline": [
       "sleep 30",
       "sudo apt-get install -y wget",
+      "sudo apt install -y ruby-full",
       "sudo apt-get install -y nginx",
       "sudo apt-get install -y software-properties-common",
       "sudo add-apt-repository -y ppa:ondrej/php",
