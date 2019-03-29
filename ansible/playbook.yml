@@ -6,6 +6,6 @@
   tasks:
   - name: Install list of packages
     apt: 
-      name: foo
+      name: unzip
       update_cache: yes
     
