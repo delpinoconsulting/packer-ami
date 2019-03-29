@@ -1,9 +1,9 @@
-hosts: localhost
- connection: local
- sudo: yes
+---
+- hosts: localhost
+  connection: local
+  sudo: yes
+ 
  tasks:
-
-  — name: Install list of packages
-  apt: name={{item}} state=installed
- with_items:
- — unzip
+  - name: Install list of packages
+    apt: name={{item}} state=installed
+  with_items: unzip
