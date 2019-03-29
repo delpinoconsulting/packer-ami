@@ -52,8 +52,9 @@
       "sudo systemctl enable amazon-cloudwatch-agent"
     ]
   }],
-    "provisioners": [{
+    
+    {
       "type": "ansible-local",
       "playbook_file": "./ansible/playbook.yml"
-    }]
+    }
 }
