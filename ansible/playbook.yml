@@ -1,8 +1,10 @@
 ---
 - hosts: localhost
-  become: yes
+  #become: yes
  
   tasks:
   - name: Install list of packages
-    apt: name={{item}} state=present
-    with_items: unzip
+    apt: 
+      name: foo
+      update_cache: yes
+    
