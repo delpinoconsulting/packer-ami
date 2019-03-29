@@ -22,9 +22,9 @@
       },
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
-    "ami_name": "Base-Ubuntu-18- {{timestamp}}",
+    "ami_name": "Base-Ubuntu-{{timestamp}}",
     "tags": {
-      "Name": "Base-Ubuntu-18"
+      "Name": "Base-Ubuntu"
   }
 }
 ],
