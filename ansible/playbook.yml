@@ -5,5 +5,5 @@
  
   tasks:
   - name: Install list of packages
-    apt: name={{item}} state=installed
+    apt: name={{item}} state=present
     with_items: unzip
