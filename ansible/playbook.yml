@@ -1,7 +1,7 @@
 ---
 - hosts: all
   remote_user: ubuntu
-  #become: yes
+  become: yes
  
   tasks:
   - name: Install list of packages
