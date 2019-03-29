@@ -49,11 +49,9 @@
       "sudo dpkg -i amazon-cloudwatch-agent.deb",
       "sudo systemctl enable amazon-cloudwatch-agent"
     ]
-  }]
-    "provisioners": [
-    {
+  }],
+    "provisioners": [{
       "type": "ansible",
       "playbook_file": "ansible/playbook.yml"
-    }
-  ],
+    }]
 }
