@@ -28,7 +28,13 @@
   }
 }
 ],
-  "provisioners": [{
+    "provisioners": [
+    {
+      "type": "ansible",
+      "playbook_file": "ansible/playbook.yml"
+    }
+  ],
+   "provisioners": [{
     "type": "shell",
     "inline": [
       "sleep 30",
