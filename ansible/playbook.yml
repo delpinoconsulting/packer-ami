@@ -3,8 +3,16 @@
   become: yes
  
   tasks:
-  - name: Install list of packages
-    apt: 
-      name: unzip
+ - name: Install packages
+    apt:
+      name: "{{ packages }}"
+      state: latest
       update_cache: yes
+      force_apt_get: true
+    vars:
+      packages:
+      - sqlite3
+      - npm
+      - nodejs
+      - git
     
